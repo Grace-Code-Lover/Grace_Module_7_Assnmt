@@ -85,7 +85,7 @@ span:has(.material-symbols-outlined), span:has(.profile-picture) :hover{
 
 .main-section{
     flex-grow: 7;
-    border: 1px solid rgba(0, 0, 0, 0.342);
+    border-left: 1px solid rgba(0, 0, 0, 0.342);
     padding: 3% 1% 0 2%;
     overflow-x: hidden;
     overflow-y:scroll ;
@@ -158,8 +158,13 @@ span:has(.material-symbols-outlined), span:has(.profile-picture) :hover{
 }
 
 .posts-section .user-profile .dots {
-    position: absolute;
-    right: 13%;
+    position: relative;
+    left: 63%;
+    margin-top: 5%;
+}
+
+.posts-section .user-profile .dots:hover {
+    cursor: pointer;
 }
 
 .posts-section .post-content {
