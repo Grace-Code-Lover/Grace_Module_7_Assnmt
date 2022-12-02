@@ -109,24 +109,22 @@ span:has(.material-symbols-outlined), span:has(.profile-picture) :hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
-    padding: 50px 0 20px 0;
+    padding: 10px 0 10px 0;
     background-color: rgb(255, 255, 255);
     min-width: 45vw;
 }
 
 .posts-section {
     z-index: -2;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 450px;
-}
-
-.main-section .posts-section {
+    gap: 588px;
     position: relative;
-    top: 9rem;
+    top: -200px;
 }
 
 .posts-section .user-profile .profile-bg .profile-picture {
@@ -173,6 +171,24 @@ span:has(.material-symbols-outlined), span:has(.profile-picture) :hover{
     position: absolute;
     right: 2%;
     top: 1;
+}
+
+.like-comment{
+    position: relative;
+    left: 11%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.like-comment .icons {
+    display: flex;
+    color: rgb(78, 76, 76);
+}
+
+.like-comment .icons div + span {
+    margin-left: 60%;
+    margin-top: 10px;
 }
 
 .posts-section .post-content img , .posts-section .post-content video {
